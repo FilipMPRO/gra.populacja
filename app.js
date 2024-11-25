@@ -56,17 +56,16 @@ function wieksze1(){
         btn2.disabled = true
         if(incorrect==5){
             alert(`koniec gry zobyłeś ${correct} punktów`)
-            incorrect=0
-            correct=0
-            document.getElementById("poprawne").textContent = correct
-            document.getElementById("niepoprawne").textContent = incorrect  
-            random()
+            // setTimeout(() => {
+                incorrect=0
+                correct=0
+                document.getElementById("poprawne").textContent = correct
+                document.getElementById("niepoprawne").textContent = incorrect  
+                random()  
+            // }, 10000);
         }
-        else{
-            setTimeout(() => {
-                random()
-            }, 2000);
-        }
+        
+
     }
     document.getElementById("poprawne").textContent = correct
     document.getElementById("niepoprawne").textContent = incorrect
@@ -92,16 +91,15 @@ function wieksze2(){
         btn2.disabled = true
         if(incorrect==5){
             alert(`koniec gry zobyłeś ${correct} punktów`)
-            incorrect=0
-            correct=0
-            document.getElementById("poprawne").textContent = correct
-            document.getElementById("niepoprawne").textContent = incorrect  
-            random()
-        }
-        else{
-            setTimeout(() => {
-                random()
-            }, 2000);
+            // setTimeout(() => {
+               
+                incorrect=0
+                correct=0
+                document.getElementById("poprawne").textContent = correct
+                document.getElementById("niepoprawne").textContent = incorrect  
+                random()  
+            // }, 10000);
+           
         }
         
     }
